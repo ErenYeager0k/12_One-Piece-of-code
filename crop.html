@@ -1,9 +1,56 @@
 
 
 <style>
-  html body {
-    background-color: rgb(206, 206, 228);
-  }
+  /* Form container */
+  
+.form-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #f7f7f7;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Form labels */
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Form inputs */
+input[type="number"],
+select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #e5e5e5;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Submit button */
+button[type="submit"] {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: #00a1ff;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #0077ff;
+}
+
 </style>
 <!--Form Section-->
 <br /><br />
@@ -18,8 +65,9 @@
     height: 50rem;
     margin: 0px auto;
     color: black;
-    border-radius: 25px;
-    padding: 10px 10px;
+    border-radius: 15px;
+    padding: 30px;
+    background-color: #c5c5c5;
   ">
   <form method="POST" action="{{ url_for('crop_prediction') }}">
     <div class="form-group">
